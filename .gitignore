@@ -1,0 +1,23 @@
+# 「.htaccess」と「.htpasswd」など、.ht で始まるファイルを追跡しない
+.ht*
+
+# すべてのフォルダ内の「.htaccess」を追跡しない
+.htaccess
+
+# すべてのフォルダ内の「.vscode」を追跡しない
+.vscode
+
+# bu_ で始まるものは追跡しない
+bu_*
+
+# DS_Storeは追跡しない
+.DS_Store
+
+# フォルダ「prototype」を追跡しない
+prototype/
+/prototype
+
+# node
+/node_modules
+package-lock.json
+package.json
