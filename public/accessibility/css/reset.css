@@ -1,0 +1,156 @@
+@charset "UTF-8";
+html{
+    margin: 0;padding: 0;
+    height: 100%;
+    height: -webkit-fill-available;
+  }
+  body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  dfn{
+    font-style: normal;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  
+  ul[class],
+  ol[class] {
+    list-style: none;
+  }
+  ul,li{list-style: none;padding: 0;margin:0;}
+  
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  article > * + * {
+    margin-top: 1em;
+  }
+  
+  a{
+    text-decoration: none;
+    word-break: break-all;
+    &:focus-visible{
+      outline: var(--accent-color1) auto 1px;
+    }
+  }
+  
+  sub{
+    vertical-align: bottom;
+    position: relative;
+    top: 0.1rem;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font-family: "Noto Sans CJK";
+  }
+  [type="search"]:-webkit-search-cancel-button,
+  [type="search"]:-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  input[type="text"],input[type="search"] {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  input[type="checkbox"]:checked + label {
+    background: #ff0000;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  
+  button,
+  input[type="submit"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 0;
+      border: none;
+      outline: none;
+      background: transparent;
+  }
+  
+  iframe{
+    width: 100%;
+    border:none;
+    overflow-y: hidden;
+  }
+  
+  *{ max-height: 100000000px; } 
+  /* Android Chrome Font Size Bug Fix */
+  
+  /* アクセシビリティ */
+  [tabindex="-1"]:focus {
+    outline: 0;
+  }
