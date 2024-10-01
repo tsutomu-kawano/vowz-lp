@@ -24,9 +24,9 @@
     <meta property="og:site_name" content="株式会社VOWZ つながり、ひろがる、Web制作。" />
     <meta property="og:description" content="">
     <link rel="canonical" href="※※※※※※※※※※※※" />
-    <link rel="stylesheet" href="/accessibility/css/reset.css"/>
-    <link rel="stylesheet" href="/accessibility/css/fonts.css"/>
-    <link rel="stylesheet" href="/accessibility/css/style.css"/>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
  </head>
 
  <body class="accessibility-lp">
@@ -108,10 +108,10 @@
         </svg>
       </div>
 			<!-- article-inner start -->
-       <div class="bg-gradation">
-        <div class="article-inner">
+      <div class="article-inner">
+        <div class="bg-gradation">
           <section>
-            <h2>
+            <h2 class="basic-title align-c">
               <span>アクセシビリティAに含まれる内容(主な4例)</span>
             </h2>
             <div class="example-list-wrap">
@@ -167,67 +167,162 @@
               </ul>
             </div><!-- /example-list-wrap -->
 
-            <div id="accordionGroup" class="accordion" aria-label="Example of an accordion">
-              <!--　accordion1  -->
+            <div id="accordionGroup" class="accordion" aria-label="アクセシビリティレベルAの項目内容が記載されているアコーディオンを開く">
+              <!--  accordion1  -->
               <h3>
                 <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect1" id="accordion1id">
                   <span class="accordion-title">
-                    SPY×FAMILY
+                    その他のレベルA※については以下の項目をクリアした制作を行います。
                     <span class="accordion-icon"></span>
                   </span>
                 </button>
               </h3>
               <div id="sect1" aria-labelledby="accordion1id" class="accordion-panel" hidden="">
                 <div>
-                  <a href="https://ja.wikipedia.org/wiki/SPY%C3%97FAMILY">SPY×FAMILY</a>
-                  （スパイファミリー）は、遠藤達哉による日本の漫画。『少年ジャンプ+』（集英社、以下『J+』）にて2019年3月25日より隔週月曜更新で連載中。
-                </div>
-              </div>
-            
-              <!--　accordion2  -->
-              <h3>
-                <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect2" id="accordion2id">
-                  <span class="accordion-title">
-                    鬼滅の刃
-                    <span class="accordion-icon"></span>
-                  </span>
-                </button>
-              </h3>
-              <div id="sect2" aria-labelledby="accordion2id" class="accordion-panel" hidden="">
-                <div>
-                  <p>
-                    <a href="https://ja.wikipedia.org/wiki/%E9%AC%BC%E6%BB%85%E3%81%AE%E5%88%83">鬼滅の刃</a>
-                    （きめつのやいば、英: Demon Slayer: Kimetsu no Yaiba[3]）は、吾峠呼世晴による日本の漫画作品。『週刊少年ジャンプ』（集英社）にて2016年11号から2020年24号まで連載された[4]。略称は「鬼滅」[5]。単行本（全23巻）の累計発行部数は、2021年2月時点で1億5000万部を突破している[注釈 1][6]。
-                  </p>
-                </div>
-              </div>
-            
-              <!--　accordion3  -->
-              <h3>
-                <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="sect3" id="accordion3id">
-                  <span class="accordion-title">
-                    僕のヒーローアカデミア
-                    <span class="accordion-icon"></span>
-                  </span>
-                </button>
-              </h3>
-              <div id="sect3" aria-labelledby="accordion3id" class="accordion-panel" hidden="">
-                <div>
-                  <p>
-                    <a href="https://ja.wikipedia.org/wiki/%E5%83%95%E3%81%AE%E3%83%92%E3%83%BC%E3%83%AD%E3%83%BC%E3%82%A2%E3%82%AB%E3%83%87%E3%83%9F%E3%82%A2">僕のヒーローアカデミア</a>
-                    （ぼくのヒーローアカデミア、My Hero Academia）は、堀越耕平による日本の漫画作品。『週刊少年ジャンプ』（集英社）にて2014年32号より連載中。略称は「ヒロアカ」[3][4]。「“無個性”」だった主人公が最高のヒーローを目指して成長していくヒーロー漫画作品[5]。堀越耕平にとって3作目の連載作品となる[6]。『赤マルジャンプ』2008 WINTERに掲載された読切『僕のヒーロー』を基に構想された[6]。
-                  </p>
+                  <p>※それぞれの内容については省略、簡略化しており、主要となる対応を記載しております。</p>
+                  <dl class="accessibility-list">
+                    <dt>1.2.1　音声だけ及び映像だけ (収録済)</dt>
+                    <dd>
+                      音声のみのコンテンツには、その内容を文字起こしするテキストの提供をおこない、映像のみのコンテンツには、その内容を説明する音声トラックを提供します。
+                      <span class="caption">→ 実装の際は内容をテキストや音声解説などの素材はお客様に提供いただき実装致します。</span>
+                    </dd>
+                    <dt>1.2.2　キャプション (収録済)</dt>
+                    <dd>
+                      映像に含まれる音声の内容をキャプション(テキスト)として表示します。
+                      <span class="caption">→ 実装の際はキャプションのテキストはお客様に提供いただき実装致します。</span>
+                    </dd>
+                    <dt>1.2.3 音声解説、又はメディアに対する代替 (収録済)</dt>
+                    <dd>
+                      視覚に障害のあるユーザーのために、映像の重要な内容を音声で説明する音声解説、または詳細なテキストにて表示します。
+                      <span class="caption">視覚に障害のあるユーザーのために、映像の重要な内容を音声で説明する音声解説、または詳細なテキストにて表示します。</span>
+                    </dd>
+                    <dt>1.3.1　情報及び関係性</dt>
+                    <dd>
+                      コンテンツの情報構造が適切に伝わるように、見出し、リスト、表などの意味的なマークアップを行い、情報の関係性や階層構造を明確にします。
+                    </dd>
+                    <dt>1.4.1　色の使用</dt>
+                    <dd>
+                      色による識別が困難なユーザーのために、色だけを頼りとした情報提示や操作の促しはせず、テキスト、記号なども併用してわかりやすく表現する。
+                    </dd>
+                    <dt>1.4.2　音声の制御</dt>
+                    <dd>
+                      ３秒以上の自動で再生される音声などある場合
+                    </dd>
+                    <dt>2.1.1　キーボード</dt>
+                    <dd>
+                      キーボードのみでWEBページの閲覧や操作ができる実装を行う。
+                    </dd>
+                    <dt>2.1.2　キーボードトラップなし</dt>
+                    <dd>
+                      キーボードTABキーで移動する場合フォーカスが外せなくなるなどが無いように実装する。<br>
+                      モーダルダイアログなどにおいてもESCキーで閉じれるように実装する。
+                    </dd>
+                    <dt>2.2.1　タイミング調整可能</dt>
+                    <dd>
+                    コンテンツにおいて表示時間などの時間制限を設ける場合、解除や調整(10倍以上長くできる実装)、延長などの機能をつけて実装する。
+                    </dd>
+                    <dt>2.3.1　3回の閃光、又は閾値以下</dt>
+                    <dd>
+                      1秒間に3回以上の点滅があるコンテンツを実装しない。
+                    </dd>
+                    <dt>2.4.1　ブロックスキップ</dt>
+                    <dd>
+                      ヘッダー やサイドナビなどのページ内で繰り返す情報や項目がある場合、それをスキップできる実装を行う。
+                    </dd>
+                    <dt>2.4.2　ページタイトル</dt>
+                    <dd>
+                      他のページとタイトルが重複するのを避け、ページにあった適切なタイトルを定義する。
+                    </dd>
+                    <dt>2.4.3　フォーカス順序</dt>
+                    <dd>
+                      キーボード操作(Tabキーなど)でフォーカスする要素は適切な順番にフォーカスできるようにする。(上から順になど規則性のある順序でフォーカスさせる)
+                    </dd>
+                    <dt>2.4.4　リンクの目的</dt>
+                    <dd>
+                      リンク先がリンクテキスト、前後の文などでわかるようにテキストを記述する。
+                      <span class="caption">例：『リンクはこちら』→『vowzサイトのリンはこちら』</span>
+                    </dd>
+                    <dt>3.1.1　ページの言語</dt>
+                    <dd>
+                      lang属性を適切に実装する。<br>
+                      <span class="caption">例：日本語のページの場合 &lt;html lang=&quot;ja&quot;&gt;</span>
+                      <span class="caption">例：上記のような日本語ページで一部英語がある場合 &lt;h2 lang=&quot;en&quot;&gt;Hellow VOWZ</h2></span>
+                    </dd>
+                  </dl>
                 </div>
               </div>
             </div>
+            <!-- /accordion -->
+            <div class="border-top">
+              <p class="caption">※参考：「ウェブアクセシビリティ導入ガイドブック」（デジタル庁）</p>
+              <p class="caption">※達成基準レベルAについてWCAG2.1で定められた達成基準をもとに制作いたします。</p>            
+            </div>
+
           </section>
         </div>
-        <!-- /article-inner -->
+        <!-- /bg-gradation -->
+        <div class="bg-ocean">
+          <section>
+            <div class="merit-area">
+              <h2 class="basic-title align-c">アクセシビリティ対応のメリット<sup>※</sup></h2>
+              <div class="img-merit-wrap">
+                <figure class="merit-illust-01">
+                  <img src="/accessibility/img/pic_08.png" alt="">
+                  <figcaption>ブランド価値の向上</figcaption>
+                </figure>
+                <figure class="merit-illust-02">
+                  <img src="/accessibility/img/pic_09.png" alt="">
+                  <figcaption>UXの向上<span>ユーザーエクスペリエンス</span></figcaption>
+                </figure>
+                <figure class="merit-illust-03">
+                  <img src="/accessibility/img/pic_10.png" alt="">
+                  <figcaption>SEOの向上</figcaption>
+                </figure>
+              </div>
+              <!-- /img-merit-wrap -->
+              <p>アクセシビリティ対応は、企業が社会的責任を果たすことにつながり、ブランド価値を高めます。また、PC、タブレット、スマートフォンなど、あらゆるデバイスで使いやすい設計を行うことで、UX（ユーザーエクスペリエンス）が向上し、サイトのアクセス数や滞在時間の増加が期待でき、
+                さらに、適切なマークアップはSEO（検索エンジン最適化）にも効果的です。<br>このように、アクセシビリティ対応には多くのメリットがあります。</p>
+              <p class="caption align-r">※効果を確実に保証するものではありません。</p>
+            </div>
+          </section>
+        </div>
+        <div class="bg-gradation">
+          <section>
+            <div class="strengths-area">
+              <h2 class="basic-title align-c">
+                <img src="" alt=""><span>VOWZの強み</span>
+              </h2>
+              <ul class="grid col-3 strengths-card-wrap">
+                <li class="strengths-card">
+                  <h3 class="strengths-card-title">確かな経験と実績</h3>
+                  <figure>
+                    <img src="/accessibility/img/pic_11.png" alt="">
+                  </figure>
+                  <p>設立以来、数多くの企業様のサイトを作成いたしました。大規模サイトから小さなサイトまで柔軟に対応いたします。</p>
+                </li>
+                <li class="strengths-card">
+                  <h3 class="strengths-card-title">UI設計に自信あり</h3>
+                  <figure>
+                    <img src="/accessibility/img/pic_12.png" alt="">
+                  </figure>
+                  <p>どのような要件のサイトでもユーザー目線を第一に、使いやすさを重視したUI設計、汎用的な実装を心がけており、お客様からご好評いただいております。</p>
+                </li>
+                <li class="strengths-card">
+                  <h3 class="strengths-card-title">最新の動向の取り入れ</h3>
+                  <figure>
+                    <img src="/accessibility/img/pic_13.png" alt="">
+                  </figure>
+                  <p>VOWZスタッフは定期的にアクセシビリティの勉強会を実施、セミナーにも積極的に参加しており、アクセシビリティの最新の動向を常にチェックし業務に反映しております。</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
-      <!-- /bg-gradation -->
+      <!-- /article-inner -->
 		</article>
 	</main>
 </body>
 
-
+<script src="./js/accessibility.js"></script>
 </html>
