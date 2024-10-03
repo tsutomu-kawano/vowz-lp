@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/fonts.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/contener.css"/>
+    <link rel="stylesheet" href="./css/animation.css"/>
  </head>
 
  <body class="accessibility-lp">
@@ -34,13 +36,13 @@
 		<article>
       <div class="bg-light-wrap">
         <!-- mv-inner start -->
-        <div class="mv-wrap">
-          <section>
+        <div class="mv-wrap blur-start">
+          <section class="container-1">
             <div class="mv-top">
                 <div class="mv-copy">
                   <hgroup>
                     <p><span>見やすい、使いやすい、正しく伝わる</span></p>
-                    <h1>
+                    <h1 class="mt-8">
                         <img src="/accessibility/img/copy_01.png" alt="UI・アクセシビリティに配慮したWEBサイト制作はVOWZにお任せ">
                     </h1>
                   </hgroup>
@@ -51,13 +53,14 @@
                     <img src="/accessibility/img/illust_01.svg" alt="">
                   </div>
                 </div>
-                <div class="mv-tag">
-                  <img src="" alt="">
-                  <p class="caption">※WCAG2.1で定められた達成基準</p>
+                <div class="mv-tag scroll-illust-1">
+                  <img src="/accessibility/img/copy_04.jpg" alt="アクセシビリティA標準対応">
+                  <p class="caption mt-8">※WCAG2.1で定められた達成基準</p>
+                  <p class="caption">※構造上不可の場合は事前に提示し達成可能な範囲にて実装</p>
               </div>
             </div><!-- /mv-top -->
 
-            <div class="mv-bottom mt-24">
+            <div class="mv-bottom mt-32 scroll-illust-2">
                 <div class="brackets">
                     <h2>今求められている<span>すべての人にやさしいWEBサイト</span></h2>
                 </div>
@@ -82,7 +85,7 @@
                   </li>
                 </ul>
                 <!-- /top-illust end -->
-                <div class="explanation-box">
+                <div class="explanation-box scroll-illust-3">
                   <h3>2024年、Webアクセシビリティ義務化</h3>
                   <p>2024年4月1日から障害者差別解消法が改正され、<span>社会的障壁の除去</span>の実施として<span>合理的配慮の提供が義務化</span>されました。<br>
                       この中にWebアクセシビリティが含まれており、全ての事業者は必要な対策を講じることが求められています。<br>
@@ -109,13 +112,15 @@
       </div>
 			<!-- article-inner start -->
       <div class="article-inner">
+
+        <!-- bg-gradation start -->
         <div class="bg-gradation">
-          <section>
+          <section class="container-2">
             <h2 class="basic-title align-c">
               <span>アクセシビリティAに含まれる内容(主な4例)</span>
             </h2>
-            <div class="example-list-wrap">
-              <ul class="example-list">
+            <div class="example-list-wrap mt-80">
+              <ul class="example-list scroll-up-serial">
                 <li class="example-list-item">
                   <figure>
                     <img src="/accessibility/img/pic_04.png" alt="">
@@ -166,7 +171,6 @@
                 </li>
               </ul>
             </div><!-- /example-list-wrap -->
-
             <div id="accordionGroup" class="accordion" aria-label="アクセシビリティレベルAの項目内容が記載されているアコーディオンを開く">
               <!--  accordion1  -->
               <h3>
@@ -257,22 +261,23 @@
               <p class="caption">※参考：「ウェブアクセシビリティ導入ガイドブック」（デジタル庁）</p>
               <p class="caption">※達成基準レベルAについてWCAG2.1で定められた達成基準をもとに制作いたします。</p>            
             </div>
-
           </section>
         </div>
-        <!-- /bg-gradation -->
-        <div class="bg-ocean">
-          <section>
+        <!-- /bg-gradation end -->
+
+        <!-- bg-ocean start -->
+        <div class="bg-merit">
+          <section class="container-3">
             <div class="merit-area">
               <h2 class="basic-title align-c">アクセシビリティ対応のメリット<sup>※</sup></h2>
-              <div class="img-merit-wrap">
+              <div class="img-merit-wrap mt-32">
                 <figure class="merit-illust-01">
                   <img src="/accessibility/img/pic_08.png" alt="">
                   <figcaption>ブランド価値の向上</figcaption>
                 </figure>
                 <figure class="merit-illust-02">
                   <img src="/accessibility/img/pic_09.png" alt="">
-                  <figcaption>UXの向上<span>ユーザーエクスペリエンス</span></figcaption>
+                  <figcaption>UXの向上<span>(ユーザーエクスペリエンス)</span></figcaption>
                 </figure>
                 <figure class="merit-illust-03">
                   <img src="/accessibility/img/pic_10.png" alt="">
@@ -286,29 +291,32 @@
             </div>
           </section>
         </div>
-        <div class="bg-gradation">
-          <section>
+        <!-- /bg-ocean end -->
+
+        <!-- bg-gradation-type2 start -->
+        <div class="bg-gradation-type2">
+          <section class="container-4">
             <div class="strengths-area">
               <h2 class="basic-title align-c">
                 <img src="" alt=""><span>VOWZの強み</span>
               </h2>
-              <ul class="grid col-3 strengths-card-wrap">
+              <ul class="grid col-3 strengths-card-wrap gap-40 scroll-up-serial">
                 <li class="strengths-card">
-                  <h3 class="strengths-card-title">確かな経験と実績</h3>
+                  <h3 class="strengths-card-title"><span><img src="/accessibility/img/icon_02.svg" alt=""></span>確かな経験と実績</h3>
                   <figure>
                     <img src="/accessibility/img/pic_11.png" alt="">
                   </figure>
                   <p>設立以来、数多くの企業様のサイトを作成いたしました。大規模サイトから小さなサイトまで柔軟に対応いたします。</p>
                 </li>
                 <li class="strengths-card">
-                  <h3 class="strengths-card-title">UI設計に自信あり</h3>
+                  <h3 class="strengths-card-title"><span><img src="/accessibility/img/icon_02.svg" alt=""></span>UI設計に自信あり</h3>
                   <figure>
                     <img src="/accessibility/img/pic_12.png" alt="">
                   </figure>
                   <p>どのような要件のサイトでもユーザー目線を第一に、使いやすさを重視したUI設計、汎用的な実装を心がけており、お客様からご好評いただいております。</p>
                 </li>
                 <li class="strengths-card">
-                  <h3 class="strengths-card-title">最新の動向の取り入れ</h3>
+                  <h3 class="strengths-card-title"><span><img src="/accessibility/img/icon_02.svg" alt=""></span>最新の動向の取り入れ</h3>
                   <figure>
                     <img src="/accessibility/img/pic_13.png" alt="">
                   </figure>
@@ -318,11 +326,186 @@
             </div>
           </section>
         </div>
+        <!-- /bg-gradation-type2 end -->
+
+        <!-- bg-light-wrap start -->
+        <div class="bg-light-wrap">
+          <section class="container-5">
+            <h2 class="large-title mt-64">UI/アクセシビリティ<br>改善の事例</h2>
+            <p class="mt-24">実際にUI、アクセシビリティ改善した事例をご紹介します</p>
+            <ul class="case-cade-wrap scroll-up-serial">
+              <li class="case-cade">
+                <figure>
+                  <img src="/accessibility/img/pic_14.png" alt="">
+                </figure>
+                <div>
+                  <h3 class="case-cade-title">約1000p! 大規模サイトのアクセシビリティAA 対応!!</h3>
+                  <ul class="ctegory-wrap">
+                    <li class="ctegory"><span>UI</span></li>
+                    <li class="ctegory"><span>アクセシビリティ</span></li>
+                  </ul>
+                  <p>多言語サイトも合わせ、約1000pを超えるアクセシビリティのリニューアルを行いました。約１年をかけアクセシビリティAAに準拠したサイトリニューアルを成功させました。</p>
+                </div>
+              </li>
+              <li class="case-cade">
+                <figure>
+                  <img src="/accessibility/img/pic_15.jpg" alt="" class="img-cover border-radius-16">
+                </figure>
+                <div>
+                  <h3 class="case-cade-title">導線UIの再設計</h3>
+                  <ul class="ctegory-wrap">
+                    <li class="ctegory"><span>UI</span></li>
+                  </ul>
+                  <p>サイトの導線が複雑でユーザーが目的のページにたどり着けていないというご相談を受け、UI改善を行いました。導線を整理し、PC時はもちろんスマートフォンでも使いやすくした結果、アクセス数と滞在時間が向上しました。</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="case-cade-wrap-bottom scroll-up-serial">
+              <li class="case-cade">
+                <figure>
+                  <img src="/accessibility/img/pic_16.jpg" alt="" class="img-cover border-radius-16">
+                </figure>
+                <div>
+                  <h3 class="case-cade-title">特殊サーバー環境での実装</h3>
+                  <ul class="ctegory-wrap">
+                    <li class="ctegory"><span>アクセシビリティ</span></li>
+                  </ul>
+                  <p>PHPやJavaScriptに制限があるサーバーでのサイトリニューアルを行いました。制限内でもできるだけ動きを損わせない実装を行い、モダンなサイトへのリニューアルを成功しました。</p>
+                </div>
+              </li>
+              <li class="case-cade col-3">
+                <figure>
+                  <img src="/accessibility/img/pic_17.png" alt="">
+                </figure>
+                <div>
+                  <h3 class="case-cade-title">特殊サーバー環境での実装</h3>
+                  <ul class="ctegory-wrap">
+                    <li class="ctegory"><span>アクセシビリティ</span></li>
+                  </ul>
+                  <p>PHPやJavaScriptに制限があるサーバーでのサイトリニューアルを行いました。制限内でもできるだけ動きを損わせない実装を行い、モダンなサイトへのリニューアルを成功しました。</p>
+                </div>
+              </li>
+              <li class="case-cade col-3">
+                <figure>
+                  <img src="/accessibility/img/pic_18.png" alt="">
+                </figure>
+                <div>
+                  <h3 class="case-cade-title">特殊サーバー環境での実装</h3>
+                  <ul class="ctegory-wrap">
+                    <li class="ctegory"><span>アクセシビリティ</span></li>
+                  </ul>
+                  <p>PHPやJavaScriptに制限があるサーバーでのサイトリニューアルを行いました。制限内でもできるだけ動きを損わせない実装を行い、モダンなサイトへのリニューアルを成功しました。</p>
+                </div>
+              </li>
+            </ul>
+            <div class="bottom-illust-area">
+              <figure>
+                <img src="/accessibility/img/illust_06.svg" alt="">
+              </figure>
+              <figure>
+                <img src="/accessibility/img/copy_03.jpg" alt="">
+              </figure>
+            </div>
+          </section>
+        </div>
+        <!-- /bg-light-wrap end -->
+
+        <!-- bg-accessibility start -->
+        <div class="bg-accessibility">
+          <section class="container-6">
+            <h2 class="line-title">アクセシビリティはレベルA、AAを準拠にし、実装いたします</h2>
+            <p class="mt-24">VOWZではお客様のご希望を伺い、アクセシビリティA準拠にするかAA準拠にするかを相談し実装いたします。<br>AAAは、デザイン等での制限も多く実用的ではありません。要件によっては条件が満たせない場合もあるため、ご要望を伺った上で対応可能か判断させていだきます。</p>
+            <h3 class="accessibility-title mt-40"><img src="/accessibility/img/icon_04.svg" alt="" class="icon">アクセシビリティA、AA、AAAとは?</h3>
+            <div class="bg-white border-radius-16 mt-16">
+              <p>アクセシビリティの基準は、Webコンテンツアクセシビリティガイドライン（WCAG）によって定義されています。WCAGは、Web上のコンテンツが障害を持つ人々にとっても利用可能であることを確保するための国際的な基準です。WCAGは、アクセシビリティのレベルをA、AA、AAAの3つのレベルに分類しています。それぞれのレベルで満たすべき基準には以下のような特徴があります。</p>
+              <ul class="dot-list mt-16">
+                <li>・レベル A （25の達成基準）：アクセシビリティ確保に最低限必要なレベル</li>
+                <li>・レベルAA（上記＋13の達成基準）：諸外国でも公的機関に求められるレベル</li>
+                <li>・レベルAAA（上記＋23の達成基準）：レベル AAAを目標とすることは制限が厳しいため実用的ではない</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <!-- /bg-accessibility end -->
+
+        <div class="bg-wark-flow">
+          <section class="container-7">
+            <h2 class="wark-flow-title"><span>プロジェクトの進行の流れ</span></h2>
+            <p class="wark-flow-lead mt-40">お客様よりご依頼を承りましたら<br>通常、下記の流れにて制作進行いたします</p>
+            <div class="wark-flow-wrap">
+              <ul class="wark-flow scroll-up-serial">
+                <li class="oder-2-1">
+                  <span class="flow-category">ヒアリング</span>
+                  <div class="wark-flow-card">
+                    <div class="wark-flow-img">
+                      <span>
+                        <img src="/accessibility/img/number-01.svg" alt="">
+                      </span>
+                      <img src="/accessibility/img/pic_19.png" alt="">
+                    </div>
+                    <p>プロジェクト内容をメールなどで伺い、依頼内容を精査し大まかな要件把握とお見積りを行なっていきます。</p>
+                  </div>
+                </li>
+                <li class="oder-1-2">
+                  <span class="flow-category">キックオフ</span>
+                  <div class="wark-flow-card">
+                    <div class="wark-flow-img">
+                      <span>
+                        <img src="/accessibility/img/number-02.svg" alt="">
+                      </span>
+                      <img src="/accessibility/img/pic_20.png" alt="">
+                    </div>
+                    <p>お見積もりをご了承いただき、内容が決定しましたら制作メンバーとお客様で開始時に打ち合わせをし相互で内容のすり合わせを行います。</p>
+                  </div>
+                </li>
+                <li class="oder-4-3">
+                  <span class="flow-category">要件定義・画面設計</span>
+                  <div class="wark-flow-card">
+                    <div class="wark-flow-img">
+                      <span>
+                        <img src="/accessibility/img/number-03.svg" alt="">
+                      </span>
+                      <img src="/accessibility/img/pic_21.png" alt="">
+                    </div>
+                    <p>要件定義し、画面設計を行っていきます。<br>細かなスケジュールを決めて、プロジェクトによっては週に数回お客様と会議をし、内容を細かく報告し確認しながら進めていきます。</p>
+                  </div>
+                </li>
+                <li class="oder-3-4">
+                  <span class="flow-category">デザイン・コーディング</span>
+                  <div class="wark-flow-card">
+                    <div class="wark-flow-img">
+                      <span>
+                        <img src="/accessibility/img/number-04.svg" alt="">
+                      </span>
+                      <img src="/accessibility/img/pic_22.png" alt="">
+                    </div>
+                    <p>アクセシビリティ を考慮したデザイン作成を行い、デザインの了承いただけましたらコーディングを開始いたします。</p>
+                  </div>
+                </li>
+                <li class="oder-5">
+                  <span class="flow-category">修正〜納品対応</span>
+                  <div class="wark-flow-card">
+                    <div class="wark-flow-img">
+                      <span>
+                        <img src="/accessibility/img/number-05.svg" alt="">
+                      </span>
+                      <img src="/accessibility/img/pic_23.png" alt="">
+                    </div>
+                    <p>修正対応と、アクセシビリティチェックを行い納品データを作成していきます。<br>弊社のチェック項目を元に人の目で１つ１つチェックをして納品物に問題がないか入念に確認してから納品いたします。</p>
+                  </div>
+                  <span class="flow-category-last">納品</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
       </div>
       <!-- /article-inner -->
 		</article>
 	</main>
 </body>
-
+<script src="./js/jquery-3.7.1.min.js"></script>
 <script src="./js/accessibility.js"></script>
+<script src="./js/animation.js"></script>
 </html>

@@ -1,0 +1,12 @@
+/* SP
+-------------------------------------------------- */
+.container-1 {
+    container-type: inline-size;
+}
+.container-1 {
+    @container (max-width: 991px) {
+        .mv-illust {
+            max-width: 46vw;
+        }
+    }
+}
