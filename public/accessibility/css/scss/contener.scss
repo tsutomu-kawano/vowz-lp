@@ -4,9 +4,9 @@
     container-type: inline-size;
 }
 .container-1 {
-    @container (max-width: 991px) {
+    @container (max-width: 980px) {
         .mv-illust {
-            max-width: 46vw;
+            max-width: 33vw;
         }
     }
 }

@@ -1,5 +1,6 @@
 'use strict';
 
+// アコーディオン
 class Accordion {
   constructor(domNode) {
     this.buttonEl = domNode.querySelector('button[aria-expanded]');
@@ -46,4 +47,19 @@ class Accordion {
 
 document.querySelectorAll('.accordion h3').forEach((accordionEl) => {
   new Accordion(accordionEl);
+});
+
+// お問合せはこちら
+window.addEventListener('scroll', function() {
+  const contactLinkWrap = document.querySelector('.contact-link-wrap');
+  const contactForm = document.getElementById('contact-form');
+  
+  const rect = contactForm.getBoundingClientRect();
+  
+  // #contact-formが画面に表示されたとき
+  if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+    contactLinkWrap.classList.add('hidden');
+  } else {
+    contactLinkWrap.classList.remove('hidden');
+  }
 });

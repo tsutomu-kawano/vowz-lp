@@ -22,7 +22,7 @@ $(window).on('load', function () {
 // スクロールアニメーション
 // --------------------------------
 $(window).on("load scroll", function () {
-  $('.scroll-fade,.scroll-up,.scroll-down,.scroll-right,.scroll-left,.scroll-up-serial')
+  $('.scroll-fade,.scroll-up,.scroll-down,.scroll-right,.scroll-left,.scroll-up-serial,.blur-scholl')
   .each(function () {
     var elemOffset = $(this).offset().top;
     var scrollPos = $(window).scrollTop();
