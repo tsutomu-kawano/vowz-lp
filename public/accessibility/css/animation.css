@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /* MV */
-.blur-start {
+.blur-start,
+.blur-scholl {
   opacity: 0;
   transition: transform 0.5s linear;
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-.blur{
+.blur,
+.blur-scholl.done {
   animation-name: imageBlur;
   opacity: 1;
   transition: .5s;
