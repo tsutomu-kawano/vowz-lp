@@ -37,7 +37,8 @@
 }
 .scroll-illust-1,
 .scroll-illust-2,
-.scroll-illust-3 {
+.scroll-illust-3,
+.scroll-illust-4 {
     opacity: 0;
     transition: transform .8s linear;
     animation-fill-mode: both;
@@ -59,6 +60,12 @@
     animation-duration: 3s;
     opacity: 1;
     transition: 2s;
+}
+.scroll-illust-4.done {
+    animation-name: scrollIllust;
+    animation-duration: 3s;
+    opacity: 1;
+    transition: 3s;
 }
 @-webkit-keyframes scrollIllust {
   from {
