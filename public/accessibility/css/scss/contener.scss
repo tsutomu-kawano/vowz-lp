@@ -99,6 +99,7 @@
         .mv-illust {
             max-width: 45vw;
             bottom: 80px;
+            right: -6px;
         }
         .mv-tag {
             display: flex;
@@ -127,7 +128,7 @@
             content: "";
             position: absolute;
             background: url(/accessibility/img/illust_03.svg) no-repeat 50% / contain;
-            top: -210px;
+            top: -222px;
             left: -45px;
             width: 12vw;
             height: 100%;
