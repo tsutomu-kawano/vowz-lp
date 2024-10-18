@@ -4,6 +4,9 @@ label {
   font-weight: bold;
   color: #333;
 }
+.policy-area label {
+  margin-bottom: 0;
+}
 fieldset {
   border: none;
 }
@@ -31,16 +34,36 @@ textarea {
   resize: vertical;
   min-height: 200px;
 }
+input[type="checkbox"] {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
 /* 必須マークのスタイル */
 label span {
   color: red;
   font-weight: normal;
   font-size: 0.9em;
 }
+.policy-area > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.policy-area > a {
+  color: var(--main-color);
+}
+.policy-area > a:hover,
+.policy-area > a:focus {
+  text-decoration: underline;
+}
+.policy-area input[type="checkbox"]:checked + label {
+  background: none;
+}
 
 form button {
   display: block;
-  margin: 0 auto;
+  margin: 40px auto 0;
   max-width: 420px;
   width: 100%;
   padding: 10px;
@@ -58,11 +81,24 @@ form button:hover {
   background-color: #003874;
 }
 
+form button:focus {
+  background-color: #003874;
+  outline: #ff8c00 auto 4px;
+}
+
 input:focus,
 textarea:focus {
     border-color: #007BFF;
     outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.policy-area input:focus {
+  border-color: #007BFF;
+  outline: none;
+  padding: 4px;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 form > fieldset > div + div {
   margin-top: 16px;
