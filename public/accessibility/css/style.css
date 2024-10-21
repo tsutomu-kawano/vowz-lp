@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
     --main-color: #20259D;
+    --accent-color: #9d2020;
     --light-blue: #E3EFFA;
     --gray-type1: #BFBFBF;
     --gray-type2: #d5d5d5;
@@ -19,6 +20,7 @@ html {
 }
 /* margin */
 .mt-0 {margin-top: 0!important;}
+.mt-4 {margin-top: 4px!important;}
 .mt-8 {margin-top: 8px!important;}
 .mt-16 {margin-top: 16px!important;}
 .mt-24 {margin-top: 24px!important;}
@@ -50,6 +52,9 @@ html {
 }
 .min  {
     font-size: .85rem!important;
+}
+.strong {
+    font-weight: bold;
 }
 .basic-title {
     color: var(--main-color);
@@ -111,6 +116,11 @@ html {
     line-height: 1.6;
     text-indent: -1em;
     padding-left: 1em;
+}
+.dot-list > li > p {
+    font-size: .85rem;
+    font-weight: normal;
+    text-indent: 0;
 }
 .dot-list > li + li {
     padding-top: 4px;
