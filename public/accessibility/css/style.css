@@ -1669,3 +1669,20 @@ padding: 20px;
     flex-direction: row;
   }
 }
+
+/* 2024.1108 追加
+-------------------------------------------------- */
+
+.contact-link-wrap .campaign-icon > img {
+    position: absolute;
+    width: 100%;
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%) scale(1.4);
+}
+@media (max-width: 767px) {
+    .contact-link-wrap .campaign-icon > img {
+        top: -120px;
+        transform: translateX(-50%) scale(1.3);
+    }  
+}
